@@ -8,4 +8,4 @@ install:
   - npm --version
   - csslint --version
 script:
-  - csslint $TRAVIS_BUILD_DIR/github-markdown.css
+  - csslint --format=compact $TRAVIS_BUILD_DIR/github-markdown.css
