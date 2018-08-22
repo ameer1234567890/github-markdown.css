@@ -1,0 +1,8 @@
+sudo: false
+language: bash
+os:
+  - linux
+install:
+  - npm install -g csslint
+script:
+  - csslint --quiet $TRAVIS_BUILD_DIR/github-markdown.css
