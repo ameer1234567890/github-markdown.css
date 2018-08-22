@@ -3,6 +3,8 @@ language: bash
 os:
   - linux
 install:
+  - npm -i -g npm
   - npm install -g csslint
+  - csslint --version
 script:
-  - csslint --quiet --warnings=<> $TRAVIS_BUILD_DIR/github-markdown.css
+  - csslint --quiet --warnings="" $TRAVIS_BUILD_DIR/github-markdown.css
