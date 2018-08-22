@@ -5,4 +5,4 @@ os:
 install:
   - npm install -g csslint
 script:
-  - csslint --quiet $TRAVIS_BUILD_DIR/github-markdown.css
+  - csslint --quiet --warnings= $TRAVIS_BUILD_DIR/github-markdown.css
