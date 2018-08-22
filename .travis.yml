@@ -5,6 +5,7 @@ os:
 install:
   - npm i -g npm
   - npm install -g csslint
+  - npm --version
   - csslint --version
 script:
   - csslint $TRAVIS_BUILD_DIR/github-markdown.css
